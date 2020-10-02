@@ -34,3 +34,21 @@ hist(cars$speed, col = pantone[2,2])
 ```
 
 ![](README_files/figure-gfm/example-1.png)<!-- -->
+
+``` r
+#install.packages("tidyverse")
+library(tidyverse)
+rep <- data.frame(x = rep(1:35, 39)[1:1341],
+                  y = rep(1:39, each = 35)[1:1341],
+                  f = factor(1:1341))
+bind_cols(pantone, rep) %>%
+  ggplot(aes(x,y, fill = f)) + 
+  geom_tile() +
+  coord_equal()+
+  scale_fill_manual(values = pantone$hex[1:1341]) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(title = "All Pantone Colors")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
