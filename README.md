@@ -19,7 +19,7 @@ You can install the package from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("pdparker/panton")
+devtools::install_github("pdparker/pantone")
 ```
 
 ## Example
@@ -27,7 +27,7 @@ devtools::install_github("pdparker/panton")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(panton)
+library(pantone)
 data(pantone)
 
 hist(cars$speed, col = pantone[2,2])
