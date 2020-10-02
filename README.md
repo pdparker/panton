@@ -1,0 +1,36 @@
+
+# pantone
+
+<!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/panton)](https://CRAN.R-project.org/package=panton)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+The goal of panton is to provide hex values for 1341 Pantone colors
+taken from
+[https://www.easycalculation.com/colorconverter/pantone-to-hex-table.php](here).
+
+## Installation
+
+You can install the package from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("pdparker/panton")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(panton)
+data(pantone)
+
+hist(cars$speed, col = pantone[2,2])
+```
+
+![](README_files/figure-gfm/example-1.png)<!-- -->
