@@ -23,15 +23,17 @@ devtools::install_github("pdparker/pantone")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
+```{r}
 library(pantone)
 data(pantone)
-
-hist(cars$speed, col = pantone[2,2])
-
+head(pantone)
 ```
+
+
+```{r example}
+hist(cars$speed, col = pantone[2,2])
+```
+
 ```{r, warning=FALSE,message=FALSE,fig.width = 10, fig.height = 10}
 #install.packages("tidyverse")
 library(tidyverse)

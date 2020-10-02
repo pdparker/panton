@@ -24,12 +24,21 @@ devtools::install_github("pdparker/pantone")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(pantone)
 data(pantone)
+head(pantone)
+```
 
+    ##        pantone     hex
+    ## 1     Yellow C #fedd00
+    ## 2 Yellow 012 C #ffd700
+    ## 3 Orange 021 C #fe5000
+    ## 4   Warm Red C #f9423a
+    ## 5    Red 032 C #ef3340
+    ## 6 Rubine Red C #ce0058
+
+``` r
 hist(cars$speed, col = pantone[2,2])
 ```
 
@@ -51,4 +60,4 @@ bind_cols(pantone, rep) %>%
   labs(title = "All Pantone Colors")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
